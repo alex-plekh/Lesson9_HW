@@ -218,6 +218,36 @@ if ((userName === 'John' && userAge === 29) || (userName === 'Kate' && userAge =
 ((userName === 'John' && userAge === 29) || (userName === 'Kate' && userAge === 15)) ? alert(`Привет ${userName} ${userAge}`) : alert('Пока');
 
 
+//3-variant(switch)
+
+let userName = prompt('Name');
+let userAge = +prompt('Age');
+switch (userName){
+    case userName='John':
+        switch (userAge) {
+            case userAge = 29:
+                console.log(`Привет ${userName} ${userAge}`);
+                break;
+            default:
+                console.log("Пока")
+                break;
+        }
+        break;
+    case userName='Kate':
+        switch (userAge) {
+            case userAge=15:
+                console.log(`Привет ${userName} ${userAge}`);
+                break;
+            default:
+                console.log("Пока")
+                break;
+        }break;
+    default:
+        console.log("Пока")
+        break;
+}
+
+
 // Циклы
 
 //1)Сформируйте строку вида ".#.#.#.#.#." с помощью цикла for.
@@ -261,7 +291,7 @@ for(let i = 0; i < 4; i++){
 
 let que;
 while (!que){
-    que = confirm('click on 'cancel' or 'ok'!');
+    que = confirm('click on cancel or ok!');
     console.log(que);
 }
 
